@@ -460,9 +460,6 @@ ol {
   margin-right: 120px;
 }
 
-.container-footer-social {
-}
-
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
@@ -582,7 +579,7 @@ ol {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffffff;
 }
 /* #endregion footer */
 
