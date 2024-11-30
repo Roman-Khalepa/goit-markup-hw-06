@@ -581,6 +581,10 @@ ol {
   letter-spacing: 0.04em;
   color: #ffffffff;
 }
+
+.subscribe-footer-input::placeholder {
+  color: #ffffffff
+}
 /* #endregion footer */
 
 /* #region modal */
