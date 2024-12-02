@@ -256,18 +256,18 @@ ol {
 
 .container-icon-about {
   display: none;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 1158px) {
   .container-icon-about {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
   }
 }
 
@@ -286,6 +286,8 @@ ol {
 @media only screen and (min-width: 1158px) {
   .about-list {
     gap: 24px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -348,14 +350,15 @@ ol {
 
 /* #region our team */
 .section-team {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
   background-color: #f4f4fd;
 }
 
 .team-main-title {
-  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 72px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -364,9 +367,18 @@ ol {
 }
 
 .team-list {
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-item {
