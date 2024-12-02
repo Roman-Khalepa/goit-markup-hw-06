@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -47,23 +51,21 @@ ol {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-
-  @media only screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
-
-  @media only screen and (min-width: 1158px) {
-    .container {
-      max-width: 1158px;
-      padding: 0 15px;
-    }
-  }
-  /* max-width: 1158px;
-  padding: 0 15px;
-   */
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 /* #endregion container */
 
 /* #region header */
@@ -223,7 +225,13 @@ ol {
 
 /* #region about */
 .section-about {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-about {
+    padding: 120px 0;
+  }
 }
 
 .about-main-title {
@@ -247,7 +255,7 @@ ol {
 }
 
 .container-icon-about {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -257,29 +265,85 @@ ol {
   margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 1158px) {
+  .container-icon-about {
+    display: flex;
+  }
+}
+
 .about-list {
-  gap: 24px;
+  gap: 72px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-list {
+    gap: 72px 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-list {
+    gap: 24px;
+  }
 }
 
 .about-item {
-  width: calc((100% - 72px) / 4);
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .about-list-title {
+  font-weight: 700;
+  font-size: 36px;
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
 }
 
+@media only screen and (min-width: 768px) {
+  .about-list-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 .about-list-text {
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
+
+@media only screen and (min-width: 1158px) {
+  .about-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
 /* #endregion about */
 
 /* #region our team */
