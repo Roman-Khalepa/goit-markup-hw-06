@@ -21,12 +21,17 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="page-header hide">
+    <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
+          <button class="icon-mobile-btn" type="button">
+            <svg class="icon-mobile-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-menu"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li class="nav-item nav-item-first">
               <a class="nav-link nav-link-first" href="./index.html">Studio</a>
@@ -76,7 +81,7 @@
           <ul class="about-list">
             <li class="about-item">
               <div class="container-icon-about">
-                <svg class="icon-about " width="64" height="64">
+                <svg class="icon-about" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -608,5 +613,67 @@
       </div>
     </div>
     <!-- #endregion modal -->
+
+    <!-- #region mobile-menu -->
+    <div class="modal-mobile-menu is-open">
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a class="modal-mobile-link" href="./index.html">Studio</a></li>
+        <li><a class="modal-mobile-link" href="./index.html">Portfolio</a></li>
+        <li><a class="modal-mobile-link" href="./index.html">Contacts</a></li>
+      </ul>
+    
+    <address class="mobile-menu-contacts">
+      <ul class="mobile-menu-contacts-list">
+        <li class="contacts-item">
+          <a class="contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+    
+    </address>
+      <ul class="mobile-menu-social-list">
+        <li class="footer-social-item">
+          <a href="" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- #endregion mobile-menu -->
   </body>
 </html>
