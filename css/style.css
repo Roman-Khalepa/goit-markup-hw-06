@@ -212,8 +212,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -230,16 +229,10 @@ ol {
 
 .hero-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
 }
-
 
 @media only screen and (min-width: 768px) {
   .hero-title {
@@ -409,10 +402,24 @@ ol {
 /* #endregion about */
 
 /* #region our team */
+
 .section-team {
-  /* padding: 120px 0; */
+ 
   padding: 96px 0;
   background-color: #f4f4fd;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-team {
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-team {
+    padding: 120px 0;
+  }
 }
 
 .team-main-title {
@@ -427,7 +434,7 @@ ol {
 }
 
 .team-list {
-  /* gap: 24px; */
+  
   gap: 72px 0;
   display: flex;
   flex-wrap: wrap;
@@ -444,6 +451,7 @@ ol {
 @media only screen and (min-width: 1158px) {
   .team-list {
     flex-wrap: nowrap;
+    gap: 24px;
   }
 }
 
@@ -475,6 +483,7 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .team-list-social-links {
@@ -497,6 +506,14 @@ ol {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 1157px) {
+  .team-social-link:active {
+    fill: #fff;
+    background-color: #404bbf;
+    border: none;
+  }
 }
 
 .team-social-link:hover,
