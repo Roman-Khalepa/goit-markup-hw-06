@@ -202,7 +202,7 @@ ol {
 /* #region hero */
 .hero {
   max-width: 1440px;
-  padding: 188px 0;
+  padding: 72px 52px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -216,17 +216,38 @@ ol {
   margin-right: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 36px 136px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+  }
+}
+
 .hero-title {
-  max-width: 496px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 72px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
 }
 
 .hero-btn {
@@ -246,6 +267,14 @@ ol {
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 1157px) {
+  .hero-btn:active {
+    fill: #fff;
+    background-color: #404bbf;
+    border: none;
+  }
 }
 
 .hero-btn:hover,
