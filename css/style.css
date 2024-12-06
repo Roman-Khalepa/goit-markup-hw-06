@@ -201,14 +201,14 @@ ol {
 
 /* #region hero */
 .hero {
-  max-width: 1440px;
+  
   padding: 72px 52px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/dark-bg_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -218,14 +218,24 @@ ol {
 @media only screen and (min-width: 768px) {
   .hero {
     padding: 112px 36px 136px;
+      background-color: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/dark-bg_tab@1x.jpg);
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
-  }
-}
+      background-color: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/people-office_desk@1x.jpg);
+      }
+      }
+              
 
 .hero-title {
   font-weight: 700;
@@ -527,8 +537,13 @@ ol {
 
 /* #region our portfolio */
 .portfolio {
-  /* padding: 120px 0; */
   padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
 }
 
 .portfolio-main-title {
@@ -576,8 +591,7 @@ ol {
     width: calc(33.3333% - 16px);
   }
 }
-.portfolio-item:active
-.portfolio-item:hover,
+.portfolio-item:active .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -633,18 +647,55 @@ ol {
 /* #endregion our portfolio */
 
 /* #region footer */
+
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
+  /* padding: 100px 0; */
   background-color: #2e2f42;
 }
+
 .container-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
 .container-footer-content {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  margin-bottom: 72px;
 }
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  max-width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+ 
+
+
+  .container-footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Вирівнювання по горизонталі */
+    justify-content: center;
+    /* Вирівнювання по вертикалі, якщо потрібно */
+    text-align: center;
+  }
+
 
 .footer-social-text {
   font-weight: 500;
@@ -683,22 +734,6 @@ ol {
 
 .footer-social-icon {
   fill: #f4f4fd;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.footer-logo .logo-part {
-  color: #f4f4fd;
-}
-.footer-text {
-  max-width: 264px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
 }
 
 .form-subscribe {
