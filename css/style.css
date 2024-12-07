@@ -695,6 +695,7 @@ ol {
 
 .container-footer {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
 }
@@ -702,6 +703,8 @@ ol {
 .container-footer-content {
   /* margin-right: 120px; */
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-logo {
@@ -727,10 +730,11 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Вирівнювання по горизонталі */
   justify-content: center;
-  /* Вирівнювання по вертикалі, якщо потрібно */
   text-align: center;
+    margin-bottom: 72px;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .footer-social-text {
@@ -773,7 +777,9 @@ ol {
 }
 
 .form-subscribe {
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  text-align: center;
+  margin: auto;
 }
 
 .subscribe-slogan {
@@ -786,8 +792,8 @@ ol {
 }
 
 .subscribe-footer-form {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
 
 .subscribe-footer-input {
@@ -801,6 +807,7 @@ ol {
   letter-spacing: 0.04em;
   color: #fff;
   padding-left: 16px;
+  margin-bottom: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -819,6 +826,7 @@ ol {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
