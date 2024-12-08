@@ -693,6 +693,13 @@ ol {
   background-color: #2e2f42;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 100px 0;
+    background-color: #2e2f42;
+  }
+}
+
 .container-footer {
   display: flex;
   flex-direction: column;
@@ -705,6 +712,12 @@ ol {
     flex-direction: row;
     margin-left: 108px;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container-footer {
+    margin-left: 156px;
   }
 }
 
@@ -726,6 +739,12 @@ ol {
   display: flex;
   justify-content: center;
   /* display: inline-block; */
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo {
+    justify-content: left;
+  }
 }
 
 .footer-logo .logo-part {
@@ -754,7 +773,14 @@ ol {
 
 @media only screen and (min-width: 768px) {
   .container-footer-social {
-  margin-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container-footer-social {
+    align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -800,7 +826,7 @@ ol {
 .form-subscribe {
   /* margin-left: 80px; */
   text-align: center;
-  margin: auto;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -820,13 +846,11 @@ ol {
   color: #fff;
 }
 
-
-
 @media only screen and (min-width: 768px) {
   .subscribe-footer-form {
-      display: flex;
+    display: flex;
     gap: 24px;
-    }
+  }
 }
 
 .subscribe-footer-input {
@@ -842,6 +866,12 @@ ol {
   padding-left: 16px;
   margin-bottom: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 1158px) {
+  .subscribe-footer-input {
+    margin-bottom: 16px;
+  }
 }
 
 .subscribe-footer-btn {
