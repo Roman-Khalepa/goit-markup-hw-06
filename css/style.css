@@ -710,8 +710,16 @@ ol {
 @media only screen and (min-width: 768px) {
   .container-footer {
     flex-direction: row;
-    margin-left: 108px;
-    margin-right: auto;
+    justify-content: center;
+    align-items: flex-start;
+     text-align: left;
+    gap: 24px;
+  }
+
+  .container-footer-content,
+  .container-footer-social,
+  .form-subscribe {
+    margin: 0;
   }
 }
 
