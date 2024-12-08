@@ -703,14 +703,16 @@ ol {
 @media only screen and (min-width: 768px) {
   .container-footer {
     flex-direction: row;
+    margin-left: 108px;
+    margin-right: auto;
   }
 }
 
 .container-footer-content {
   /* margin-right: 120px; */
   margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -752,7 +754,7 @@ ol {
 
 @media only screen and (min-width: 768px) {
   .container-footer-social {
-    display: ;
+  margin-left: 0;
   }
 }
 
@@ -804,7 +806,8 @@ ol {
 @media only screen and (min-width: 768px) {
   .form-subscribe {
     text-align: left;
-    margin-left: 80px;
+    margin-right: auto;
+    margin-left: 0;
   }
 }
 
