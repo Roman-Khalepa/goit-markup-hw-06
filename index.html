@@ -142,9 +142,8 @@
               <img
                 class="team-img"
                 srcset="
-                  /images/mark-guerrero.jpg    1x,
-                  /images/mark-guerrero@2x.jpg 2x
-                "
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="mark-guerrero"
                 width="264"
@@ -188,7 +187,7 @@
             <li class="team-item">
               <img
                 class="team-img"
-                srcset="./images/tom-ford.jpg 1x, /images/tom-ford@2x.jpg 2x"
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="tom-ford"
                 width="264"
@@ -234,7 +233,7 @@
                 class="team-img"
                 srcset="
                   ./images/camila-garcia.jpg   1x,
-                  /images/camila-garcia@2x.jpg 2x
+                  ./images/camila-garcia@2x.jpg 2x
                 "
                 src="./images/camila-garcia.jpg"
                 alt="camila-garcia"
@@ -281,7 +280,7 @@
                 class="team-img"
                 srcset="
                   ./images/daniel-wilson.jpg   1x,
-                  /images/daniel-wilson@2x.jpg 2x
+                  ./images/daniel-wilson@2x.jpg 2x
                 "
                 src="./images/daniel-wilson.jpg"
                 alt="daniel-wilson"
@@ -341,7 +340,7 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/banking-app_desk@1x.jpg  1x,
+                      ./images/banking-app_desk@1x.jpg 1x,
                       ./images/banking-app_desk@2x.jpg 2x
                     "
                   />
@@ -355,7 +354,7 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./images/banking-app_tab@1x.jpg  1x,
+                      ./images/banking-app_tab@1x.jpg 1x,
                       ./images/banking-app_tab@2x.jpg 2x
                     "
                   />
@@ -542,8 +541,8 @@
                     src="./images/taxi-service_tab@1x.jpg"
                     alt="taxi-service"
                     width="360"
-                    height="300" -->
-                  />
+                    height="300"
+                  /> -->
                   <source
                     media="(max-width: 767px)"
                     srcset="
@@ -859,7 +858,7 @@
     <!-- #endregion modal -->
 
     <!-- #region mobile-menu -->
-    <div class="modal-mobile-menu  is-open">
+    <div class="modal-mobile-menu">
       <button class="modal-close-btn" type="button">
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
@@ -867,26 +866,31 @@
       </button>
       <nav class="mobile-menu-nav">
         <ul class="mobile-menu-list">
-        <li><a class="modal-mobile-link studio" href="./index.html">Studio</a></li>
-        <li><a class="modal-mobile-link" href="./index.html">Portfolio</a></li>
-        <li><a class="modal-mobile-link" href="./index.html">Contacts</a></li>
-      </ul>
+          <li>
+            <a class="modal-mobile-link studio" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="modal-mobile-link" href="./index.html">Portfolio</a>
+          </li>
+          <li><a class="modal-mobile-link" href="./index.html">Contacts</a></li>
+        </ul>
       </nav>
-      
 
       <address class="mobile-menu-contacts">
         <ul class="mobile-menu-contacts-list">
-           <li class="contacts-item">
+          <li class="contacts-item">
             <a class="mobile-menu-contacts-link tel" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
           <li class="contacts-item">
-            <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
+            <a
+              class="mobile-menu-contacts-link"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-                 </ul>
+        </ul>
       </address>
       <ul class="mobile-menu-social-list">
         <li class="mobile-menu-social-item">
