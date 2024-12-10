@@ -186,6 +186,7 @@ ol {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+    padding: 0;
   }
 }
 
@@ -228,8 +229,7 @@ ol {
   margin: 0 auto;
 }
 
-@media only screen and (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     padding: 72px 0px;
     background-color: #2e2f42;
@@ -254,7 +254,7 @@ ol {
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  only screen and (min-width: 768px) and(min-resolution: 2dppx) {
   .hero {
     background-color: #2e2f42;
     background-image: linear-gradient(
@@ -279,7 +279,7 @@ ol {
 }
 
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  only screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .hero {
     background-color: #2e2f42;
     background-image: linear-gradient(
@@ -655,8 +655,8 @@ ol {
 
 @media only screen and (min-width: 1158px) {
   .portfolio-item {
-    /* width: calc((100% - 24px) / 3); */
-    flex: 0 1 calc(33.333% - 16px);
+    width: calc((100% - 2 * 24px) / 3);
+    /* flex: 0 1 calc(33.333% - 16px); */
   }
 }
 
@@ -726,8 +726,8 @@ ol {
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 108px;
-    padding-right: 188px;
+    /* padding-left: 108px;
+    padding-right: 188px; */
     background-color: #2e2f42;
   }
 }
@@ -742,10 +742,11 @@ ol {
 @media only screen and (min-width: 768px) {
   .container-footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    gap: 24px;
+    gap: 72px 24px;
+    padding: 0 108px;
   }
 
   .container-footer-content,
@@ -757,7 +758,9 @@ ol {
 
 @media only screen and (min-width: 1158px) {
   .container-footer {
-    margin-left: 156px;
+    /* margin-left: 156px; */
+    gap: 0;
+    padding: 0 15px;
   }
 }
 
@@ -768,8 +771,9 @@ ol {
   margin-right: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
   .container-footer-content {
+    margin-right: 120px;
   }
 }
 
@@ -816,6 +820,7 @@ ol {
     display: block;
     margin-left: 0;
     text-align: left;
+    margin: 0;
   }
 }
 
@@ -823,6 +828,7 @@ ol {
   .container-footer-social {
     align-items: baseline;
     text-align: left;
+    margin-right: auto;
   }
 }
 
@@ -895,6 +901,12 @@ ol {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .subscribe-footer-form {
+    align-items: center;
+  }
+}
+
 .subscribe-footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -920,7 +932,7 @@ ol {
 
 @media only screen and (min-width: 1158px) {
   .subscribe-footer-input {
-    margin-bottom: 16px;
+    margin-bottom: 0;
   }
 }
 
