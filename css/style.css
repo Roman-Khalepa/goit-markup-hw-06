@@ -1,7 +1,3 @@
-.hide {
-  display: none;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -418,7 +414,6 @@ ol {
   }
 }
 
-
 @media only screen and (min-width: 768px) {
   .about-item {
     width: calc((100% - 24px) / 2);
@@ -654,7 +649,6 @@ ol {
 @media only screen and (min-width: 1158px) {
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
-    /* flex: 0 1 calc(33.333% - 16px); */
   }
 }
 
@@ -671,7 +665,7 @@ ol {
 }
 
 .portfolio-list-title {
-  /* margin-bottom: 8px; */
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -716,7 +710,6 @@ ol {
 
 .footer {
   padding: 96px 0;
-  /* padding: 100px 0; */
   background-color: #2e2f42;
 }
 
@@ -724,8 +717,6 @@ ol {
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
-    /* padding-left: 108px;
-    padding-right: 188px; */
     background-color: #2e2f42;
   }
 }
@@ -734,7 +725,6 @@ ol {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: baseline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -756,17 +746,21 @@ ol {
 
 @media only screen and (min-width: 1158px) {
   .container-footer {
-    /* margin-left: 156px; */
     gap: 0;
     padding: 0 15px;
   }
 }
 
 .container-footer-content {
-  /* margin-right: 120px; */
   margin-bottom: 72px;
   margin-left: 0;
   margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-footer-content {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -778,7 +772,6 @@ ol {
 .footer-logo {
   display: flex;
   justify-content: center;
-  /* display: inline-block; */
   padding: 0;
   margin-bottom: 16px;
 }
@@ -870,7 +863,6 @@ ol {
 }
 
 .form-subscribe {
-  /* margin-left: 80px; */
   text-align: center;
   margin: 0;
 }
@@ -883,6 +875,12 @@ ol {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .form-subscribe {
+    margin-right: 0;
+  }
+}
+
 .subscribe-slogan {
   margin-bottom: 16px;
   font-weight: 500;
@@ -890,6 +888,10 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.subscribe-footer-form {
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -908,8 +910,8 @@ ol {
 .subscribe-footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 288px;
-
+  width: 100%;
+  max-width: 288px;
   height: 40px;
   background-color: transparent;
   font-size: 12px;
